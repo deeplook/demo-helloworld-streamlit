@@ -4,6 +4,7 @@ import pandas as pd
 
 st.title("my first app")
 
+"""
 @st.cache
 def load_data():
     df = pd.read_csv("data.csv")
@@ -28,12 +29,13 @@ county_name = st.sidebar.selectbox(
     "Which county?",
     county_list
 ) 
+"""
 
-part_df = df[(df["event_type"]==event_type) & (df['county']==county_name)]
+# part_df = df[(df["event_type"]==event_type) & (df['county']==county_name)]
 
-st.write(f"根据你的筛选，数据包含{len(part_df)}行")
+# st.write(f"根据你的筛选，数据包含{len(part_df)}行")
 
-st.map(part_df)
+# st.map(part_df)
 
 st.markdown("""
 欢迎订阅我的微信公众号“玉树芝兰”，**第一时间免费**收到文章更新。别忘了**加星标**，以免错过新推送提示。
